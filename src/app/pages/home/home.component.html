@@ -1,1 +1,7 @@
-<p>home works!</p>
+<div class="home__container">
+  <ng-container *ngFor="let item of data | async">
+    <app-card
+      [data]="item"
+    ></app-card>
+  </ng-container>
+</div>
